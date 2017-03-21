@@ -1,0 +1,17 @@
+server {
+    listen       80;
+    server_name  localhost;
+
+    resolver 8.8.8.8;
+
+    location / {
+        google on;
+        google_scholar on;
+        google_language "en";
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   html;
+    }
+}
