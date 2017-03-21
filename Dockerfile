@@ -10,8 +10,8 @@ ENV PCRE_VERSION 8.40
 ENV OPENSSL_VERSION 1.1.0e
 ENV ZLIB_VERSION 1.2.11
 
-
-ADD conf/cn_sources.list /etc/apt/sources.list
+# 如果是国内机器，需要替换 sources
+# ADD conf/cn_sources.list /etc/apt/sources.list
 
 RUN apt-get update
 
