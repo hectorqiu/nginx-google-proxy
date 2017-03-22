@@ -1,6 +1,6 @@
 # nginx-google-proxy
 
-nginx 反向代理 google
+nginx 反向代理 google，github：[nginx-google-proxy](https://github.com/hectorqiu/nginx-google-proxy)
 
 ## 依赖环境
 + docker
@@ -23,4 +23,4 @@ curl localhost:10080
 ## more
 + 站点修改 conf/nginx/sites-enabled/
 + 外网访问通过容器 host 机器上的 nginx 反向代理 http://127.0.0.1:10080
-+ 外网域名建议加 ssl （letsencrypt）和 auth_basic 限制（被扫描到会被屏蔽）
++ 外网域名建议加 ssl （[letsencrypt](https://letsencrypt.org/)）和 auth_basic 限制（被扫描到会被屏蔽）
