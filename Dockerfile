@@ -20,13 +20,14 @@ RUN apt-get install -y -qq git wget build-essential zlib1g-dev libpcre3-dev git 
 
 # download src
 
+# && wget "http://linux.stanford.edu/pub/exim/pcre/pcre-$PCRE_VERSION.tar.gz" \
 
 RUN mkdir -p /usr/src \
     && cd /usr/src \
     && wget http://nginx.org/download/nginx-$NGINX_VERSION.tar.gz \
-    && wget "http://linux.stanford.edu/pub/exim/pcre/pcre-$PCRE_VERSION.tar.gz" \
+    && wget "https://ftp.pcre.org/pub/pcre/pcre-$PCRE_VERSION.tar.gz"
     && wget "https://www.openssl.org/source/openssl-$OPENSSL_VERSION.tar.gz" \
-    && wget "http://zlib.net/zlib-$ZLIB_VERSION.tar.gz" \
+    && wget "https://zlib.net/zlib-$ZLIB_VERSION.tar.gz" \
     && git clone https://github.com/cuber/ngx_http_google_filter_module \
     && git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module \
     && tar xzf nginx-$NGINX_VERSION.tar.gz \
