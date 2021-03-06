@@ -1,5 +1,7 @@
 # nginx-google-proxy
 
+PS：`由于依赖插件维护原因，本工程已经无法正常运作。`
+
 nginx 反向代理 google，github：[nginx-google-proxy](https://github.com/hectorqiu/nginx-google-proxy)
 
 ## 依赖环境
